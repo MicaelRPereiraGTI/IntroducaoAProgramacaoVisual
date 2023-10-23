@@ -10,9 +10,9 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
-                <div id="menu">
-                    <h4>Selecione o tipo de daltonismo:</h4>
+            <div class="col-md-4" id="menu">
+                <div class="d-flex flex-column align-items-center">
+                    <h4 class="mb-3">Selecione o tipo de daltonismo:</h4>
                     <form id="color-blindness-form">
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="color-blindness" id="normal" value="normal" checked>
@@ -33,26 +33,34 @@
                     </form>
                 </div>
             </div>
-            <div class="col-md-9">
-                <div id="content">
-                    <h1>Daltonismo</h1>
-                    <p>O daltonismo é uma deficiência visual que afeta a capacidade de perceber cores. Existem vários tipos de daltonismo, incluindo:</p>
-                    <ul>
-                        <li>Protanopia</li>
-                        <li>Deuteranopia</li>
-                        <li>Tritanopia</li>
-                    </ul>
-                    <div id="color-box">
-                        <div class="color-sample" id="color-1"></div>
-                        <div class="color-sample" id="color-2"></div>
-                        <div class="color-sample" id="color-3"></div>
-                        <div class="color-sample" id="color-4"></div>
+            <div class="col-md-8" id="content">
+                <h1>Daltonismo</h1>
+                <p>O daltonismo é uma deficiência visual que afeta a capacidade de perceber cores. As pessoas com daltonismo têm dificuldade em distinguir certas cores. Existem vários tipos de daltonismo, incluindo:</p>
+                <ul>
+                    <li><strong>Protanopia:</strong> Dificuldade em distinguir vermelho e verde.</li>
+                    <li><strong>Deuteranopia:</strong> Dificuldade em distinguir vermelho e verde (outras variações).</li>
+                    <li><strong>Tritanopia:</strong> Dificuldade em distinguir azul e amarelo.</li>
+                </ul>
+                <div id="color-box">
+                    <div class="color-sample" id="color-1">
+                        <div class="color-legend">Vermelho</div>
+                    </div>
+                    <div class="color-sample" id="color-2">
+                        <div class="color-legend">Verde</div>
+                    </div>
+                    <div class="color-sample" id="color-3">
+                        <div class="color-legend">Azul</div>
+                    </div>
+                    <div class="color-sample" id="color-4">
+                        <div class="color-legend">Amarelo</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
