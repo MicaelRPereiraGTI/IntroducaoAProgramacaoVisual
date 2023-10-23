@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daltonismo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div id="menu">
+                    <h4>Selecione o tipo de daltonismo:</h4>
+                    <form id="color-blindness-form">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="color-blindness" id="normal" value="normal" checked>
+                            <label class="form-check-label" for="normal">Visão Normal</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="color-blindness" id="protanopia" value="protanopia">
+                            <label class="form-check-label" for="protanopia">Protanopia</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="color-blindness" id="deuteranopia" value="deuteranopia">
+                            <label class="form-check-label" for="deuteranopia">Deuteranopia</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="color-blindness" id="tritanopia" value="tritanopia">
+                            <label class="form-check-label" for="tritanopia">Tritanopia</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div id="content">
+                    <h1>Daltonismo</h1>
+                    <p>O daltonismo é uma deficiência visual que afeta a capacidade de perceber cores. Existem vários tipos de daltonismo, incluindo:</p>
+                    <ul>
+                        <li>Protanopia</li>
+                        <li>Deuteranopia</li>
+                        <li>Tritanopia</li>
+                    </ul>
+                    <div id="color-box">
+                        <div class="color-sample" id="color-1"></div>
+                        <div class="color-sample" id="color-2"></div>
+                        <div class="color-sample" id="color-3"></div>
+                        <div class="color-sample" id="color-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
