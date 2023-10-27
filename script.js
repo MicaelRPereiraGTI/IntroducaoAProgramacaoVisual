@@ -20,25 +20,24 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => {
             element.style.display = "none";
             fadeIn(element);
-        }, 200); // Reduzimos o tempo de atraso para um efeito mais rápido
+        }, 200); 
     }
 
     function fadeIn(element) {
         setTimeout(() => {
             element.style.display = "block";
             element.style.opacity = "1";
-        }, 200); // Reduzimos o tempo de atraso para um efeito mais rápido
+        }, 200); 
     }
 
     function changeView(view) {
         fadeOut(left);
         fadeOut(right);
 
-        // Defina um atraso para garantir que a transição de desaparecimento seja concluída antes da exibição do novo conteúdo
+        
         setTimeout(() => {
             left.innerHTML = `<h1>${view}</h1><div class="image-container">${images[view].map(image => `<img src="${image}" alt="${image}">`).join("")}</div>`;
             
-            // Aqui, você pode definir o texto específico para cada tipo de daltonismo
             let description = "";
             if (view === "Protanopia") {
                 description = "Nesse caso também há a dificuldade em distinguir o vermelho do verde, mas o portador não enxerga a cor vermelha.";
@@ -53,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
             
             fadeIn(left);
             fadeIn(right);
-        }, 200); // Reduzimos o tempo de atraso para um efeito mais rápido
+        }, 200);
     }
 
     normalButton.addEventListener("click", () => changeView("Visão Normal"));
@@ -61,6 +60,5 @@ document.addEventListener("DOMContentLoaded", function () {
     deuteranopiaButton.addEventListener("click", () => changeView("Deuteranopia"));
     tritanopiaButton.addEventListener("click", () => changeView("Tritanopia"));
 
-    // Inicialmente, carregue o conteúdo normal
     changeView("Visão Normal");
 });
